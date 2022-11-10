@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <style>
+      #form {
+        margin: 8em;
+        margin-top: 4em;
+      }
+      h2 {
+        margin-inline: 3.6em;
+        margin-top: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Shop</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Backend <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h2 id="h2">Create product</h2>
+    <form id="form">
+      <div class="form-group">
+        <label for="productname">Name</label>
+        <input type="text" class="form-control" id="productname" />
+        <small id="productnamehelp" class="form-text text-muted"
+          >Enter Product's Name</small
+        >
+      </div>
+      <div class="form-group">
+        <label for="productdescription">Decription</label>
+        <input type="text" class="form-control" id="productdescription" />
+        <small id="productdescriptionhelp" class="form-text text-muted"
+          >Enter Product's Description</small
+        >
+      </div>
+      <div class="form-group">
+        <label for="productbrand">Brand</label>
+        <input type="text" class="form-control" id="productbrand" />
+        <small id="productbrandhelp" class="form-text text-muted"
+          >Enter Product's Brand Name</small
+        >
+      </div>
+      <div class="form-group">
+        <label for="productimage">Image URL</label>
+        <input type="text" class="form-control" id="productimage" />
+        <small id="productimagehelp" class="form-text text-muted"
+          >Enter Product's Image URL</small
+        >
+      </div>
+      <div class="form-group">
+        <label for="productprice">Price</label>
+        <input type="text" class="form-control" id="productprice" />
+        <small id="productpricehelp" class="form-text text-muted"
+          >Enter Product's Price</small
+        >
+      </div>
+
+      <button
+        type="submit"
+        class="btn btn-primary"
+        id="addbutton"
+        onclick="submitItem (event)"
+      >
+        Add an Item
+      </button>
+      <button
+        type="submit"
+        class="btn btn-danger"
+        id="deletebutton"
+        onclick="deleteItem(event)"
+      >
+        Delete Product
+      </button>
+    </form>
+    <script src="backend.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
